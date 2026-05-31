@@ -11,7 +11,6 @@ import {
   Star,
   Zap,
 } from "lucide-react";
-import { StickyInquiryCta } from "@/components/StickyInquiryCta";
 
 const highlights = [
   { label: "460 PS", text: "M TwinPower Turbo Reihensechszylinder", icon: Gauge },
@@ -235,7 +234,6 @@ export default function HomePage() {
       <section className="bmw-section bmw-form-section scroll-mt-24" id="anfrage">
         <div>
           <p className="bmw-kicker">Unverbindliche Anfrage</p>
-          <h2>Persönliche Angebotsprüfung.</h2>
           <p>
             Autohaus Müller meldet sich mit einer klaren Empfehlung zu Rate,
             Laufzeit, Kilometern und Ausstattung.
@@ -287,7 +285,6 @@ export default function HomePage() {
         </form>
       </section>
 
-      <StickyInquiryCta />
     </div>
   );
 }

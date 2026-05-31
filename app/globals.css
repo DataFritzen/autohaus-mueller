@@ -411,9 +411,13 @@
   width: 100%;
   overflow-x: auto;
   overscroll-behavior-x: contain;
-  padding: 0 0 0.45rem;
+  padding: 0;
   scroll-snap-type: x mandatory;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+}
+
+.bmw-testimonial-gallery::-webkit-scrollbar {
+  display: none;
 }
 
 .bmw-testimonials {
@@ -444,16 +448,18 @@
 }
 
 .bmw-slider-dots {
+  grid-column: 2;
   display: flex;
-  gap: 0.45rem;
-  margin-top: 0.8rem;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
 }
 
 .bmw-slider-dots span {
-  width: 1.65rem;
-  height: 0.2rem;
+  width: 0.58rem;
+  height: 0.58rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.28);
 }
 
 .bmw-slider-dots span:first-child {
@@ -683,6 +689,10 @@
   .bmw-testimonial-gallery {
     margin-right: -1rem;
     padding-right: 1rem;
+  }
+
+  .bmw-slider-dots {
+    grid-column: 1;
   }
 
   .bmw-testimonials {

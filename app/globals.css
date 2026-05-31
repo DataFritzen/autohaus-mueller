@@ -271,6 +271,11 @@
   white-space: nowrap;
 }
 
+.bmw-offer-card__cta {
+  width: 100%;
+  margin-top: 1rem;
+}
+
 .bmw-section {
   width: min(1180px, calc(100% - 2rem));
   margin: 0 auto;
@@ -289,7 +294,7 @@
 
 .bmw-section h2 {
   max-width: 760px;
-  font-size: clamp(2rem, 5vw, 4.4rem);
+  font-size: clamp(2rem, 4.5vw, 4rem);
   line-height: 0.95;
 }
 
@@ -403,16 +408,16 @@
 .bmw-testimonial-gallery {
   display: flex;
   gap: 1rem;
-  margin-right: calc((100vw - min(1180px, calc(100vw - 2rem))) / -2);
+  width: 100%;
   overflow-x: auto;
   overscroll-behavior-x: contain;
-  padding: 0 1rem 0.45rem 0;
+  padding: 0 0 0.45rem;
   scroll-snap-type: x mandatory;
   scrollbar-width: thin;
 }
 
 .bmw-testimonials {
-  flex: 0 0 min(100%, 720px);
+  flex: 0 0 100%;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.9rem;
@@ -422,6 +427,7 @@
 .bmw-testimonials figure {
   margin: 0;
   padding: 1rem;
+  min-width: 0;
 }
 
 .bmw-stars {
@@ -520,6 +526,7 @@
 
 .bmw-form-section {
   align-items: start;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
   padding-bottom: clamp(5rem, 10vw, 7rem);
 }
 

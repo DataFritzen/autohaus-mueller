@@ -106,6 +106,9 @@ export default function HomePage() {
               <dd>10.000 km/Jahr</dd>
             </div>
           </dl>
+          <a className="bmw-button bmw-button--primary bmw-offer-card__cta" href="#anfrage">
+            Angebot anfordern <ArrowRight size={18} />
+          </a>
         </aside>
       </section>
 
@@ -232,7 +235,7 @@ export default function HomePage() {
       <section className="bmw-section bmw-form-section scroll-mt-24" id="anfrage">
         <div>
           <p className="bmw-kicker">Unverbindliche Anfrage</p>
-          <h2>Dein persönliches BMW M2 Leasingangebot.</h2>
+          <h2>Persönliche Angebotsprüfung.</h2>
           <p>
             Autohaus Müller meldet sich mit einer klaren Empfehlung zu Rate,
             Laufzeit, Kilometern und Ausstattung.
